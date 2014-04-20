@@ -13,17 +13,37 @@
 	</parent>
 
 	<groupId>sc.fiji</groupId>
-	<artifactId>Process_Pixels</artifactId>
+	<artifactId>JEX_IJ2</artifactId>
 	<version>1.0.0</version>
 
-	<name>plugins/Process_Pixels.jar</name>
-	<description>A Maven project implementing an ImageJ 1.x plugin</description>
+	<name>plugins/JEX_IJ2.jar</name>
+	<description>A Maven project implementing an ImageJ 2.x plugin</description>
 
 	<dependencies>
 		<dependency>
 			<groupId>net.imagej</groupId>
-			<artifactId>ij</artifactId>
-			<version>${imagej1.version}</version>
+			<artifactId>ij-core</artifactId>
+			<version>2.0.0-beta-7.8</version>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij-commands</artifactId>
+			<version>2.0.0-beta-7.8</version>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij-app</artifactId>
+			<version>2.0.0-beta-7.8</version>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij-data</artifactId>
+			<version>2.0.0-beta-7.8</version>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij-legacy</artifactId>
+			<version>2.0.0-beta-7.8</version>
 		</dependency>
 	</dependencies>
 
@@ -87,10 +107,10 @@
 	</repositories>
 
 	<scm>
-		<connection>scm:git:git://github.com/imagej/minimal-ij1-plugin</connection>
-		<developerConnection>scm:git:git@github.com:imagej/minimal-ij1-plugin</developerConnection>
+		<connection>scm:git:git://github.com/jaywarrick/JEX_IJ2</connection>
+		<developerConnection>scm:git:git@github.com:jaywarrick/JEX_IJ2</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/imagej/minimal-ij1-plugin</url>
+		<url>https://github.com/jaywarrick/JEX_IJ2</url>
 	</scm>
 
 </project>
